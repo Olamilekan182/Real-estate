@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Essentials -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Explore premium properties, buy or rent real estate with ease and confidence." />
+
+  <!-- Page Title -->
+  <title>Real Estate | Find Your Dream Property</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts (Google Fonts Example) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+<header class="realx-header" role="banner">
+  <div class="realx-container realx-header-inner">
+
+    <!-- Logo -->
+    <div class="realx-logo">
+      <a href="/" aria-label="RealX - Home">
+        <img src="photo/images1.png" alt="RealX Logo" class="realx-logo-img" />
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="realx-nav" role="navigation" aria-label="Primary Navigation">
+      <ul class="realx-nav-list">
+        <li><a href="#home" class="realx-nav-link active">Home</a></li>
+
+        <!-- BUY MEGAMENU with <a> + ARIA -->
+        <li class="realx-dropdown">
+          <a href="#buy" class="realx-nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+            Buy <span class="realx-icon-chevron"></span>
+          </a>
+          <div class="realx-megamenu" role="menu">
+            <div class="realx-column">
+              <h4>Apartments</h4>
+              <a href="#1bed" role="menuitem">1-Bedroom</a>
+              <a href="#2bed" role="menuitem">2-Bedroom</a>
+              <a href="#penthouse" role="menuitem">Penthouse</a>
+            </div>
+            <div class="realx-column">
+              <h4>Houses</h4>
+              <a href="#bungalow" role="menuitem">Bungalow</a>
+              <a href="#duplex" role="menuitem">Duplex</a>
+              <a href="#luxury" role="menuitem">Luxury Homes</a>
+            </div>
+            <div class="realx-column">
+              <h4>Commercial</h4>
+              <a href="#shops" role="menuitem">Shops</a>
+              <a href="#warehouses" role="menuitem">Warehouses</a>
+              <a href="#offices" role="menuitem">Offices</a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="#rent" class="realx-nav-link">Rent</a></li>
+        <li><a href="#sell" class="realx-nav-link">Sell</a></li>
+        <li><a href="#about" class="realx-nav-link">About</a></li>
+        <li><a href="#contact" class="realx-nav-link">Contact</a></li>
+        <li><a href="#blog" class="realx-nav-link">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Actions: CTA + Icons -->
+    <div class="realx-header-actions">
+
+      <!-- Search -->
+      <button class="realx-search-toggle" aria-label="Open Search">
+        <span class="realx-icon-search"></span>
+      </button>
+
+      <!-- Dark Mode Toggle (custom) -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="icon-sun" aria-hidden="true">🌞</span>
+      </button>
+
+      <!-- Favorites -->
+      <button class="realx-fav-toggle" aria-label="View Favorites">
+        <span class="realx-icon-heart"></span>
+      </button>
+
+     <!-- Notifications -->
+<button class="realx-bell-toggle" aria-label="View Notifications">
+  <span class="realx-icon-bell">
+    <!-- Bell SVG -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C10.343 2 9 3.343 9 5V6.1C6.72 7.165 5 9.388 5 12V17L3 19V20H21V19L19 17V12C19 9.388 17.28 7.165 15 6.1V5C15 3.343 13.657 2 12 2ZM12 22C13.105 22 14 21.105 14 20H10C10 21.105 10.895 22 12 22Z" fill="currentColor"/>
+    </svg>
+
+    <!-- Notification dot -->
+    <span class="realx-notify-dot"></span>
+  </span>
+</button>
+
+      <!-- Account -->
+      <div class="realx-user-dropdown">
+        <button class="realx-user-toggle" aria-haspopup="true" aria-expanded="false">
+          <img src="photo/images2.jpeg" alt="User Avatar" class="realx-user-avatar" />
+        </button>
+        <ul class="realx-user-menu" role="menu">
+          <li><a href="#profile" role="menuitem">Profile</a></li>
+          <li><a href="#settings" role="menuitem">Settings</a></li>
+          <li><a href="#logout" role="menuitem">Logout</a></li>
+        </ul>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#list-property" class="realx-btn realx-btn-cta">List Your Property</a>
+
+      <!-- Mobile Hamburger -->
+      <button class="realx-hamburger" aria-label="Open Menu" aria-controls="realx-mobile-menu" aria-expanded="false">
+        <span class="realx-bar"></span>
+        <span class="realx-bar"></span>
+        <span class="realx-bar"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="realx-mobile-menu" id="realx-mobile-menu" hidden>
+    <nav role="navigation" aria-label="Mobile Navigation">
+      <ul class="realx-mobile-nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#buy">Buy</a></li>
+        <li><a href="#rent">Rent</a></li>
+        <li><a href="#sell">Sell</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+      <a href="#list-property" class="realx-btn realx-btn-cta-mobile">List Your Property</a>
+    </nav>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="realx-search-overlay" hidden>
+    <div class="realx-search-box">
+      <input type="text" placeholder="Search for properties..." aria-label="Search input" />
+      <button class="realx-btn realx-search-submit">Search</button>
+      <button class="realx-search-close" aria-label="Close Search">&times;</button>
+    </div>
+  </div>
+</header>
+ 
+
+<!-- HERO SECTION: Real Estate Premium Search -->
+<section class="hero-realestate-01" aria-labelledby="hero-title">
+  <!-- Background Image / Overlay -->
+  <div class="hero-realestate-01__bg" role="img" aria-label="Luxury house with pool and garden">
+    <div class="hero-realestate-01__overlay"></div>
+  </div>
+
+  <!-- Hero Content Container -->
+  <div class="hero-realestate-01__content container">
+    <!-- Headline & Description -->
+    <div class="hero-realestate-01__text-content">
+      <h1 id="hero-title" class="hero-realestate-01__heading">
+        Discover Your Perfect Home
+      </h1>
+      <p class="hero-realestate-01__subheading">
+        Search thousands of listings across cities and neighborhoods — your dream home is just a click away.
+      </p>
+    </div>
+
+    <!-- Search Form -->
+    <form class="hero-realestate-01__search-form" role="search" aria-label="Property search form">
+      <!-- Location -->
+      <div class="hero-realestate-01__form-group">
+        <label for="search-location" class="sr-only">Location</label>
+        <input type="text" id="search-location" name="location" placeholder="Enter city or neighborhood" required autocomplete="off" class="hero-realestate-01__input">
+      </div>
+
+      <!-- Property Type -->
+      <div class="hero-realestate-01__form-group">
+        <label for="search-type" class="sr-only">Property Type</label>
+        <select id="search-type" name="propertyType" class="hero-realestate-01__select">
+          <option value="">Property Type</option>
+          <option value="house">House</option>
+          <option value="apartment">Apartment</option>
+          <option value="commercial">Commercial</option>
+          <option value="land">Land</option>
+        </select>
+      </div>
+
+      <!-- Price Range -->
+      <div class="hero-realestate-01__form-group">
+        <label for="search-price" class="sr-only">Price Range</label>
+        <select id="search-price" name="priceRange" class="hero-realestate-01__select">
+          <option value="">Price Range</option>
+          <option value="0-50000">Under $50,000</option>
+          <option value="50000-150000">$50k - $150k</option>
+          <option value="150000-300000">$150k - $300k</option>
+          <option value="300000+">Above $300k</option>
+        </select>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hero-realestate-01__form-group hero-realestate-01__form-group--button">
+        <button type="submit" class="hero-realestate-01__button">
+          <span class="hero-realestate-01__button-text">Search Properties</span>
+          <svg class="hero-realestate-01__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M16.65 16.65a7 7 0 111.414-1.414L21 21z" />
+          </svg>
+        </button>
+      </div>
+    </form>
+
+    <!-- Featured Filters (Optional Bonus Tags) -->
+    <div class="hero-realestate-01__tags">
+      <button type="button" class="hero-realestate-01__tag">Luxury</button>
+      <button type="button" class="hero-realestate-01__tag">New Listings</button>
+      <button type="button" class="hero-realestate-01__tag">Affordable</button>
+      <button type="button" class="hero-realestate-01__tag">Beachfront</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Popular Neighborhoods Section -->
+<section class="popular-neighborhoods-section" aria-labelledby="popular-neighborhoods-heading">
+  <div class="popular-neighborhoods-container">
+    
+    <!-- Section Heading -->
+    <div class="popular-neighborhoods-header">
+      <h2 id="popular-neighborhoods-heading" class="popular-neighborhoods-title">
+        Explore Popular Neighborhoods
+      </h2>
+      <p class="popular-neighborhoods-subtitle">
+        Discover top-rated areas loved by homeowners, families, and investors.
+      </p>
+    </div>
+
+    <!-- Filter Bar (Optional Interactive Tabs) -->
+    <div class="popular-neighborhoods-filters" role="tablist" aria-label="Neighborhood Filters">
+      <button role="tab" class="popular-filter active" aria-selected="true">All</button>
+      <button role="tab" class="popular-filter">Beachfront</button>
+      <button role="tab" class="popular-filter">Affordable</button>
+      <button role="tab" class="popular-filter">Luxury</button>
+      <button role="tab" class="popular-filter">Urban</button>
+    </div>
+
+    <!-- Neighborhood Cards Grid -->
+    <div class="popular-neighborhoods-grid">
+
+      <!-- Neighborhood Card 1 -->
+      <article class="neighborhood-card" tabindex="0" aria-label="Explore Lagos Island Neighborhood">
+        <div class="neighborhood-image-container">
+          <img
+            src="photo/images3.jpeg"
+            alt="Scenic beachfront view of Lagos Island"
+            class="neighborhood-image"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <!-- Video/VR Tour Badge -->
+          <button class="video-tour-btn" aria-label="Watch video tour of Lagos Island">
+            🎥 Tour
+          </button>
+        </div>
+
+        <div class="neighborhood-content">
+          <h3 class="neighborhood-name">Lagos Island</h3>
+          <p class="neighborhood-description">
+            Vibrant coastal living with modern nightlife, exclusive beach homes, and urban attractions.
+          </p>
+
+          <!-- Feature Tags -->
+          <ul class="neighborhood-tags">
+            <li class="tag">Beachfront</li>
+            <li class="tag">Luxury</li>
+            <li class="tag">Urban</li>
+          </ul>
+
+          <!-- Call to Action -->
+          <a href="/properties/lagos-island" class="explore-btn">Explore Properties</a>
+
+          <!-- Map Preview -->
+          <div class="map-preview" aria-label="Mini map of Lagos Island">
+            <img src="photo/images4.png" alt="Map of Lagos Island" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Neighborhood Card 2 -->
+      <article class="neighborhood-card" tabindex="0" aria-label="Explore Ikoyi Neighborhood">
+        <div class="neighborhood-image-container">
+          <img
+            src="photo/images5.jpeg"
+            alt="Luxury apartments in Ikoyi"
+            class="neighborhood-image"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <!-- Video Tour Badge -->
+          <button class="video-tour-btn" aria-label="Watch video tour of Ikoyi">
+            🎥 Tour
+          </button>
+        </div>
+
+        <div class="neighborhood-content">
+          <h3 class="neighborhood-name">Ikoyi</h3>
+          <p class="neighborhood-description">
+            Elite residential hub with top schools, embassies, and high-end developments.
+          </p>
+
+          <!-- Feature Tags -->
+          <ul class="neighborhood-tags">
+            <li class="tag">Luxury</li>
+            <li class="tag">Gated</li>
+            <li class="tag">Exclusive</li>
+          </ul>
+
+          <!-- Call to Action -->
+          <a href="/properties/ikoyi" class="explore-btn">Explore Properties</a>
+
+          <!-- Map Preview -->
+          <div class="map-preview" aria-label="Mini map of Ikoyi">
+            <img src="photo/images6.png" alt="Map of Ikoyi" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Additional cards go here… -->
+
+    </div>
+
+    <!-- Load More Button -->
+    <div class="popular-neighborhoods-footer">
+      <button class="load-more-btn" aria-label="Load more neighborhoods">Load More</button>
+    </div>
+
+  </div>
+</section>
+
+ 
+ 
+ <section class="property-showcase">
+  <div class="property-showcase__header">
+    <h2 class="property-showcase__title">🏠 Featured Properties</h2>
+    <div class="property-showcase__filters">
+      <select aria-label="Filter by Type">
+        <option value="">All Types</option>
+        <option value="apartment">Apartment</option>
+        <option value="duplex">Duplex</option>
+        <option value="land">Land</option>
+        <option value="villa">Villa</option>
+      </select>
+      <select aria-label="Sort by">
+        <option value="latest">Latest</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="property-showcase__grid">
+    <!-- Property Card 1 -->
+    <article class="property-showcase__card" tabindex="0">
+      <div class="property-showcase__image-wrapper">
+        <img 
+          src="photo/images7.jpeg" 
+          srcset="photo/images7.jpeg 1x, photo/images7.jpeg 2x"
+          loading="lazy"
+          alt="Modern 4 Bedroom Duplex in Lekki Phase 1"
+          class="property-showcase__image"
+        />
+        <span class="property-showcase__badge property-showcase__badge--new">New</span>
+        <span class="property-showcase__price-tag">$350,000</span>
+        <button class="property-showcase__favorite-btn" aria-label="Save to favorites">❤️</button>
+      </div>
+      <div class="property-showcase__info">
+        <h3 class="property-showcase__name">4 Bedroom Duplex</h3>
+        <p class="property-showcase__location">Lekki Phase 1, Lagos</p>
+        <ul class="property-showcase__features">
+          <li>🛏️ 4 Beds</li>
+          <li>🛁 5 Baths</li>
+          <li>📐 380 sqm</li>
+        </ul>
+        <div class="property-showcase__actions">
+          <button class="property-showcase__details-btn">View Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Property Card 2 -->
+    <article class="property-showcase__card" tabindex="0">
+      <div class="property-showcase__image-wrapper">
+        <img 
+          src="photo/images8.jpeg" 
+          srcset="photo/images8.jpeg 1x, photo/images8.jpeg 2x"
+          loading="lazy"
+          alt="Luxury 3 Bedroom Apartment in Manhattan, NYC"
+          class="property-showcase__image"
+        />
+        <span class="property-showcase__badge property-showcase__badge--new">Just Listed</span>
+        <span class="property-showcase__price-tag">$1,200,000</span>
+        <button class="property-showcase__favorite-btn" aria-label="Save to favorites">❤️</button>
+      </div>
+      <div class="property-showcase__info">
+        <h3 class="property-showcase__name">3 Bedroom Apartment</h3>
+        <p class="property-showcase__location">Manhattan, New York</p>
+        <ul class="property-showcase__features">
+          <li>🛏️ 3 Beds</li>
+          <li>🛁 2 Baths</li>
+          <li>📐 240 sqm</li>
+        </ul>
+        <div class="property-showcase__actions">
+          <button class="property-showcase__details-btn">View Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Property Card 3 -->
+    <article class="property-showcase__card" tabindex="0">
+      <div class="property-showcase__image-wrapper">
+        <img 
+          src="photo/images9.jpeg" 
+          srcset="photo/images9.jpeg 1x, photo/images9.jpeg 2x"
+          loading="lazy"
+          alt="Beachfront Villa in Malibu"
+          class="property-showcase__image"
+        />
+        <span class="property-showcase__badge property-showcase__badge--new">Price Drop</span>
+        <span class="property-showcase__price-tag">$2,750,000</span>
+        <button class="property-showcase__favorite-btn" aria-label="Save to favorites">❤️</button>
+      </div>
+      <div class="property-showcase__info">
+        <h3 class="property-showcase__name">Luxury Beachfront Villa</h3>
+        <p class="property-showcase__location">Malibu, California</p>
+        <ul class="property-showcase__features">
+          <li>🛏️ 5 Beds</li>
+          <li>🛁 6 Baths</li>
+          <li>📐 560 sqm</li>
+        </ul>
+        <div class="property-showcase__actions">
+          <button class="property-showcase__details-btn">View Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Property Card 4 -->
+    <article class="property-showcase__card" tabindex="0">
+      <div class="property-showcase__image-wrapper">
+        <img 
+          src="photo/images10.jpeg" 
+          srcset="photo/images10.jpeg 1x, photo/images10.jpeg 2x"
+          loading="lazy"
+          alt="Modern Smart Home in Dubai Hills"
+          class="property-showcase__image"
+        />
+        <span class="property-showcase__badge property-showcase__badge--new">Open House</span>
+        <span class="property-showcase__price-tag">$1,850,000</span>
+        <button class="property-showcase__favorite-btn" aria-label="Save to favorites">❤️</button>
+      </div>
+      <div class="property-showcase__info">
+        <h3 class="property-showcase__name">Smart Home Villa</h3>
+        <p class="property-showcase__location">Dubai Hills, UAE</p>
+        <ul class="property-showcase__features">
+          <li>🛏️ 4 Beds</li>
+          <li>🛁 4 Baths</li>
+          <li>📐 420 sqm</li>
+        </ul>
+        <div class="property-showcase__actions">
+          <button class="property-showcase__details-btn">View Details</button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Load More Button -->
+  <div class="property-showcase__load">
+    <button class="property-showcase__load-btn" aria-label="Load more properties">
+      Load More Properties
+    </button>
+  </div>
+</section>
+
+
+<section class="pc-section" aria-labelledby="pc-heading">
+  <div class="pc-container">
+    <!-- Section Heading -->
+    <header class="pc-header">
+      <h2 id="pc-heading" class="pc-title">Explore Property Categories</h2>
+      <p class="pc-subtitle">Whether you're buying, renting, or selling — discover opportunities tailored to you.</p>
+    </header>
+
+    <!-- Categories Grid -->
+    <div class="pc-grid">
+      
+      <!-- Buy a Home -->
+      <article class="pc-card" tabindex="0" aria-label="Buy a Home">
+        <div class="pc-icon-wrapper">
+          <img src="photo/images11.jpeg" alt="" class="pc-icon" aria-hidden="true" />
+        </div>
+        <h3 class="pc-card-title">Buy a Home</h3>
+        <p class="pc-card-desc">Find your dream home from thousands of verified listings across trusted locations.</p>
+        <a href="#buy-listings" class="pc-btn" aria-label="Browse homes for sale">Browse Homes</a>
+      </article>
+
+      <!-- Rent a Home -->
+      <article class="pc-card" tabindex="0" aria-label="Rent a Home">
+        <div class="pc-icon-wrapper">
+          <img src="photo/images12.jpeg" alt="" class="pc-icon" aria-hidden="true" />
+        </div>
+        <h3 class="pc-card-title">Rent a Home</h3>
+        <p class="pc-card-desc">Affordable rental options with comfort, style, and location in mind.</p>
+        <a href="#rent-listings" class="pc-btn" aria-label="View rental properties">View Rentals</a>
+      </article>
+
+      <!-- Sell a Property -->
+      <article class="pc-card" tabindex="0" aria-label="Sell a Property">
+        <div class="pc-icon-wrapper">
+          <img src="photo/images13.jpg" alt="" class="pc-icon" aria-hidden="true" />
+        </div>
+        <h3 class="pc-card-title">Sell a Property</h3>
+        <p class="pc-card-desc">List your property and reach thousands of potential buyers instantly.</p>
+        <a href="#sell-property" class="pc-btn" aria-label="Start selling your property">Start Selling</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="how-steps" id="how-it-works" aria-labelledby="how-steps-title">
+  <div class="how-steps__container">
+    <!-- Section Heading -->
+    <header class="how-steps__header">
+      <h2 class="how-steps__title" id="how-steps-title">How It Works</h2>
+      <p class="how-steps__subtitle">
+        Your journey to finding the perfect home is just three simple steps away.
+      </p>
+    </header>
+
+    <!-- Steps Wrapper -->
+    <ol class="how-steps__list" role="list">
+      <!-- Step 1 -->
+      <li class="how-steps__item" role="listitem">
+        <div class="how-steps__card" tabindex="0" aria-labelledby="step1-title">
+          <div class="how-steps__icon-wrapper">
+            <img src="photo/images14.jpeg" alt="" class="how-steps__icon" loading="lazy" />
+            <span class="how-steps__number">1</span>
+          </div>
+          <h3 class="how-steps__step-title" id="step1-title">Search Properties</h3>
+          <p class="how-steps__description">
+            Browse our listings or use smart filters to find homes that match your needs.
+          </p>
+          <button class="how-steps__cta" aria-label="Start searching properties">Get Started</button>
+        </div>
+      </li>
+
+      <!-- Step 2 -->
+      <li class="how-steps__item" role="listitem">
+        <div class="how-steps__card" tabindex="0" aria-labelledby="step2-title">
+          <div class="how-steps__icon-wrapper">
+            <img src="photo/images15.png" alt="" class="how-steps__icon" loading="lazy" />
+            <span class="how-steps__number">2</span>
+          </div>
+          <h3 class="how-steps__step-title" id="step2-title">Schedule a Visit</h3>
+          <p class="how-steps__description">
+            Book a virtual or physical tour with a trusted agent to inspect your favorites.
+          </p>
+          <button class="how-steps__cta" aria-label="Book a visit with agent">Schedule Now</button>
+        </div>
+      </li>
+
+      <!-- Step 3 -->
+      <li class="how-steps__item" role="listitem">
+        <div class="how-steps__card" tabindex="0" aria-labelledby="step3-title">
+          <div class="how-steps__icon-wrapper">
+            <img src="photo/images16.png" alt="" class="how-steps__icon" loading="lazy" />
+            <span class="how-steps__number">3</span>
+          </div>
+          <h3 class="how-steps__step-title" id="step3-title">Close the Deal</h3>
+          <p class="how-steps__description">
+            Finalize paperwork securely and move into your dream home effortlessly.
+          </p>
+          <button class="how-steps__cta" aria-label="Close your deal">Close Deal</button>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+
+<!-- Client Testimonials Section -->
+<section class="realestate-testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="testimonial-header">
+      <h2 id="testimonials-heading">What Our Clients Are Saying</h2>
+      <p class="testimonial-subheading">Real stories from happy homeowners and investors across the world.</p>
+    </div>
+
+    <!-- Carousel Wrapper -->
+    <div class="testimonial-carousel" role="region" aria-label="Client Testimonials">
+      <button class="carousel-btn prev" aria-label="Previous Testimonial">&#10094;</button>
+
+      <div class="testimonial-track-wrapper">
+        <ul class="testimonial-track" role="list">
+          <!-- Testimonial Card -->
+          <li class="testimonial-card" tabindex="0">
+            <figure>
+              <div class="testimonial-avatar">
+                <img src="photo/images17.jpeg" alt="Photo of Sarah Williams" loading="lazy" width="80" height="80">
+              </div>
+              <blockquote>
+                <p>“Buying a beachfront property through PrimeHomes was the best decision I ever made. The service was flawless from start to finish.”</p>
+              </blockquote>
+              <figcaption>
+                <strong>Sarah Williams</strong><br>
+                <span>Investor, Lagos</span>
+              </figcaption>
+              <div class="testimonial-stars" aria-label="Rated 5 out of 5 stars">
+                ★★★★★
+              </div>
+            </figure>
+          </li>
+
+          <!-- Repeat for additional testimonials -->
+          <li class="testimonial-card" tabindex="0">
+            <figure>
+              <div class="testimonial-avatar">
+                <img src="photo/images18.jpeg" alt="Photo of Ahmed Musa" loading="lazy" width="80" height="80">
+              </div>
+              <blockquote>
+                <p>“Seamless buying experience and top-notch customer service. The team truly understands modern real estate.”</p>
+              </blockquote>
+              <figcaption>
+                <strong>Ahmed Musa</strong><br>
+                <span>Homebuyer, Abuja</span>
+              </figcaption>
+              <div class="testimonial-stars" aria-label="Rated 5 out of 5 stars">
+                ★★★★★
+              </div>
+            </figure>
+          </li>
+
+          <!-- Sample with video review -->
+          <li class="testimonial-card" tabindex="0">
+            <figure>
+              <div class="testimonial-avatar video-thumbnail" role="button" tabindex="0" aria-label="Watch video testimonial from Elena">
+                <img src="photo/images19.jpeg" alt="Elena Garcia video thumbnail" loading="lazy" width="80" height="80">
+                <span class="play-icon" aria-hidden="true">▶</span>
+              </div>
+              <blockquote>
+                <p>“They helped me find the perfect apartment in a new city—stress-free and under budget!”</p>
+              </blockquote>
+              <figcaption>
+                <strong>Elena Garcia</strong><br>
+                <span>Remote Worker, Nairobi</span>
+              </figcaption>
+              <div class="testimonial-stars" aria-label="Rated 5 out of 5 stars">
+                ★★★★★
+              </div>
+            </figure>
+          </li>
+        </ul>
+      </div>
+
+      <button class="carousel-btn next" aria-label="Next Testimonial">&#10095;</button>
+    </div>
+
+    <!-- Pagination Dots -->
+    <div class="testimonial-pagination" role="tablist" aria-label="Testimonial Pagination">
+      <button role="tab" aria-label="Slide 1" aria-selected="true" class="dot active"></button>
+      <button role="tab" aria-label="Slide 2" class="dot"></button>
+      <button role="tab" aria-label="Slide 3" class="dot"></button>
+    </div>
+
+    <!-- CTA -->
+    <div class="testimonial-cta">
+      <a href="/reviews" class="btn-view-all" aria-label="View all client testimonials">View All Testimonials</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="blog-highlights" aria-labelledby="blog-highlights-title">
+  <div class="blog-highlights__container">
+    
+    <!-- Section Header -->
+    <header class="blog-highlights__header">
+      <h2 id="blog-highlights-title" class="blog-highlights__title">Latest Real Estate Insights</h2>
+      <p class="blog-highlights__subtitle">
+        Stay updated with premium market trends, expert tips, and investment opportunities.
+      </p>
+    </header>
+
+    <!-- Blog Cards Grid -->
+    <div class="blog-highlights__grid">
+      
+      <!-- Blog Card 1 -->
+      <article class="blog-highlights__card" tabindex="0" aria-label="Blog: Top 10 Cities to Invest In 2025">
+        <figure class="blog-highlights__image-wrapper">
+          <img 
+          src="photo/images20.jpeg"
+             alt="Skyline view of Lagos at sunset" 
+            class="blog-highlights__image" 
+            loading="lazy"
+            width="400"
+            height="260"
+          />
+          <figcaption class="blog-highlights__badge">Trending</figcaption>
+        </figure>
+        <div class="blog-highlights__content">
+          <h3 class="blog-highlights__heading">
+            <a href="/blog/top-10-cities-2025" class="blog-highlights__link">Top 10 Cities to Invest In 2025</a>
+          </h3>
+          <p class="blog-highlights__excerpt">
+            Discover the most promising real estate markets in Africa this year with data-driven insights and expert opinions...
+          </p>
+          <div class="blog-highlights__meta">
+            <span class="blog-highlights__author">By Jane Doe</span>
+            <time datetime="2025-07-21" class="blog-highlights__date">July 21, 2025</time>
+            <span class="blog-highlights__readtime">• 5 min read</span>
+          </div>
+          <div class="blog-highlights__tags">
+            <a href="/tag/africa" class="blog-highlights__tag">#Africa</a>
+            <a href="/tag/investment" class="blog-highlights__tag">#Investment</a>
+          </div>
+          <div class="blog-highlights__actions">
+            <button class="blog-highlights__btn" aria-label="Bookmark this article">
+              <svg aria-hidden="true" class="icon icon--bookmark"><use href="#icon-bookmark"></use></svg>
+            </button>
+            <button class="blog-highlights__btn" aria-label="Share this article">
+              <svg aria-hidden="true" class="icon icon--share"><use href="#icon-share"></use></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 -->
+      <article class="blog-highlights__card" tabindex="0" aria-label="Blog: How to Spot Hidden Property Gems Before They Boom">
+        <figure class="blog-highlights__image-wrapper">
+          <img 
+            src="photo/images21.jpeg" 
+            alt="Modern suburb with new buildings under construction" 
+            class="blog-highlights__image" 
+            loading="lazy"
+            width="400"
+            height="260"
+          />
+          <figcaption class="blog-highlights__badge">Editor's Pick</figcaption>
+        </figure>
+        <div class="blog-highlights__content">
+          <h3 class="blog-highlights__heading">
+            <a href="/blog/hidden-property-gems" class="blog-highlights__link">How to Spot Hidden Property Gems Before They Boom</a>
+          </h3>
+          <p class="blog-highlights__excerpt">
+            Learn the signs of up-and-coming neighborhoods and how to identify properties with explosive future value...
+          </p>
+          <div class="blog-highlights__meta">
+            <span class="blog-highlights__author">By Michael Johnson</span>
+            <time datetime="2025-07-18" class="blog-highlights__date">July 18, 2025</time>
+            <span class="blog-highlights__readtime">• 6 min read</span>
+          </div>
+          <div class="blog-highlights__tags">
+            <a href="/tag/valuation" class="blog-highlights__tag">#Valuation</a>
+            <a href="/tag/tips" class="blog-highlights__tag">#Tips</a>
+          </div>
+          <div class="blog-highlights__actions">
+            <button class="blog-highlights__btn" aria-label="Bookmark this article">
+              <svg aria-hidden="true" class="icon icon--bookmark"><use href="#icon-bookmark"></use></svg>
+            </button>
+            <button class="blog-highlights__btn" aria-label="Share this article">
+              <svg aria-hidden="true" class="icon icon--share"><use href="#icon-share"></use></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 -->
+      <article class="blog-highlights__card" tabindex="0" aria-label="Blog: Why Smart Investors Are Choosing Eco-Friendly Properties">
+        <figure class="blog-highlights__image-wrapper">
+          <img 
+            src="photo/images22.jpeg" 
+            alt="Green eco-friendly apartments with solar panels and trees" 
+            class="blog-highlights__image" 
+            loading="lazy"
+            width="400"
+            height="260"
+          />
+          <figcaption class="blog-highlights__badge">Featured</figcaption>
+        </figure>
+        <div class="blog-highlights__content">
+          <h3 class="blog-highlights__heading">
+            <a href="/blog/eco-friendly-properties" class="blog-highlights__link">Why Smart Investors Are Choosing Eco-Friendly Properties</a>
+          </h3>
+          <p class="blog-highlights__excerpt">
+            Explore how sustainability is reshaping real estate investment and why green homes are the future of property value...
+          </p>
+          <div class="blog-highlights__meta">
+            <span class="blog-highlights__author">By Amina Yusuf</span>
+            <time datetime="2025-07-12" class="blog-highlights__date">July 12, 2025</time>
+            <span class="blog-highlights__readtime">• 4 min read</span>
+          </div>
+          <div class="blog-highlights__tags">
+            <a href="/tag/sustainability" class="blog-highlights__tag">#Sustainability</a>
+            <a href="/tag/investing" class="blog-highlights__tag">#Investing</a>
+          </div>
+          <div class="blog-highlights__actions">
+            <button class="blog-highlights__btn" aria-label="Bookmark this article">
+              <svg aria-hidden="true" class="icon icon--bookmark"><use href="#icon-bookmark"></use></svg>
+            </button>
+            <button class="blog-highlights__btn" aria-label="Share this article">
+              <svg aria-hidden="true" class="icon icon--share"><use href="#icon-share"></use></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Load More Button -->
+    <div class="blog-highlights__loadmore">
+      <button class="blog-highlights__loadmore-btn" aria-label="Load more blog posts">
+        Load More
+        <span class="loader" hidden></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Call-To-Action (Lead Capture) Section - About Us Page -->
+<section class="cta-about-section" id="lead-capture">
+  <div class="cta-about-container">
+    
+    <!-- CTA Content -->
+    <div class="cta-about-content">
+      <h2 class="cta-about-heading">Let’s Help You Find Your Ideal Home</h2>
+      <p class="cta-about-subheading">
+        Whether you’re buying, renting, or investing — our expert agents are ready to guide you.
+      </p>
+
+      <!-- Trust & Badge Area -->
+      <div class="cta-about-trust">
+        <img src="photo/images23.png" alt="Trusted by 10,000+ Buyers" class="cta-about-badge" />
+        <span class="cta-about-trust-text">Trusted by over <strong>10,000+ happy homeowners</strong></span>
+      </div>
+
+      <!-- CTA Form -->
+      <form class="cta-about-form" id="ctaAboutForm" novalidate>
+        <fieldset class="cta-about-fieldset">
+          <legend class="visually-hidden">Lead Capture Form</legend>
+
+          <!-- Name -->
+          <div class="cta-about-form-group">
+            <label for="cta-about-name">Full Name</label>
+            <input type="text" id="cta-about-name" name="name" placeholder="Your Full Name" required aria-required="true">
+            <span class="cta-about-error" aria-live="polite"></span>
+          </div>
+
+          <!-- Email -->
+          <div class="cta-about-form-group">
+            <label for="cta-about-email">Email Address</label>
+            <input type="email" id="cta-about-email" name="email" placeholder="you@example.com" required aria-required="true">
+            <span class="cta-about-error" aria-live="polite"></span>
+          </div>
+
+          <!-- Phone -->
+          <div class="cta-about-form-group">
+            <label for="cta-about-phone">Phone Number (Optional)</label>
+            <input type="tel" id="cta-about-phone" name="phone" placeholder="+234 801 234 5678">
+          </div>
+
+          <!-- Location -->
+          <div class="cta-about-form-group">
+            <label for="cta-about-location">Preferred Location</label>
+            <select id="cta-about-location" name="location" required aria-required="true">
+              <option value="">Select a Location</option>
+              <option value="lagos">Lagos</option>
+              <option value="abuja">Abuja</option>
+              <option value="portharcourt">Port Harcourt</option>
+              <option value="kano">Kano</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="cta-about-error" aria-live="polite"></span>
+          </div>
+
+          <!-- Submit -->
+          <div class="cta-about-form-action">
+            <button type="submit" class="cta-about-submit-btn" aria-label="Submit lead capture form">
+              Request Info
+              <span class="cta-about-btn-loader" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <!-- Privacy Notice -->
+          <p class="cta-about-privacy">
+            <small>🔒 We respect your privacy. Your information is safe and secure.</small>
+          </p>
+
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- CTA Side Image -->
+    <div class="cta-about-image-wrapper">
+      <img
+        src="photo/images24.jpeg"
+        srcset="photo/images24.jpeg 2x"
+        alt="Professional real estate agent assisting a couple"
+        class="cta-about-image"
+        loading="lazy"
+      >
+    </div>
+
+  </div>
+
+  <!-- Floating Reminder Widget (Bonus Feature) -->
+  <div class="cta-about-reminder" id="ctaAboutReminder" hidden>
+    <p>Still looking? Let’s help you get matched with the perfect home! 👇</p>
+    <button type="button" class="cta-about-reminder-btn" onclick="document.getElementById('cta-about-name').focus()">
+      Fill the Form
+    </button>
+  </div>
+</section>
+
+<section class="real-newsletter" aria-labelledby="real-newsletter-heading">
+  <div class="real-newsletter__container">
+    <!-- Header Content -->
+    <div class="real-newsletter__intro">
+      <h2 id="real-newsletter-heading" class="real-newsletter__title">
+        Stay Ahead in Real Estate
+      </h2>
+      <p class="real-newsletter__subtitle">
+        Subscribe to our newsletter and get exclusive property listings, investment tips, and market insights — straight to your inbox.
+      </p>
+    </div>
+
+    <!-- Form Section -->
+    <form class="real-newsletter__form" aria-label="Newsletter subscription form" novalidate>
+      <div class="real-newsletter__form-group">
+        <label for="real-newsletter-email" class="real-newsletter__label visually-hidden">
+          Email Address
+        </label>
+        <input 
+          type="email" 
+          id="real-newsletter-email" 
+          name="email" 
+          class="real-newsletter__input" 
+          placeholder="Enter your email address"
+          required 
+          aria-required="true"
+          aria-describedby="real-newsletter-helper"
+        />
+        <button type="submit" class="real-newsletter__button" aria-label="Subscribe to newsletter">
+          Subscribe
+          <span class="real-newsletter__button-icon" aria-hidden="true">📩</span>
+        </button>
+      </div>
+
+      <!-- Terms or Privacy -->
+      <div class="real-newsletter__terms">
+        <input type="checkbox" id="real-newsletter-consent" name="consent" required aria-required="true" />
+        <label for="real-newsletter-consent">
+          I agree to receive emails and have read the <a href="/privacy" target="_blank">privacy policy</a>.
+        </label>
+      </div>
+
+      <!-- Live Status / Feedback -->
+      <div 
+        class="real-newsletter__feedback" 
+        id="real-newsletter-feedback" 
+        role="status" 
+        aria-live="polite"
+      ></div>
+    </form>
+
+    <!-- Optional Enhancement / Graphic Element -->
+    <div class="real-newsletter__illustration" aria-hidden="true">
+      <!-- Placeholder for future Lottie or SVG illustration -->
+      <img src="newsletter-graphic.svg" alt="" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<footer class="realestate-footer">
+  <div class="realestate-footer__top container">
+    
+    <!-- Column 1: Brand Info -->
+    <div class="realestate-footer__column realestate-footer__brand">
+      <a href="/" class="realestate-footer__logo" aria-label="Home">
+        <img src="photo/images1.png" alt="RealEstatePro Logo" />
+      </a>
+      <p class="realestate-footer__tagline">
+        Helping you find your dream home with trust, speed, and transparency.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="realestate-footer__column realestate-footer__links">
+      <h4 class="realestate-footer__heading">Quick Links</h4>
+      <ul class="realestate-footer__list">
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/properties">Properties</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/faq">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Services -->
+    <div class="realestate-footer__column realestate-footer__services">
+      <h4 class="realestate-footer__heading">Services</h4>
+      <ul class="realestate-footer__list">
+        <li><a href="/buy">Buy a Home</a></li>
+        <li><a href="/rent">Rent a Home</a></li>
+        <li><a href="/commercial">Commercial Properties</a></li>
+        <li><a href="/luxury">Luxury Estates</a></li>
+        <li><a href="/consulting">Property Consulting</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact Info -->
+    <div class="realestate-footer__column realestate-footer__contact">
+      <h4 class="realestate-footer__heading">Contact Us</h4>
+      <ul class="realestate-footer__list realestate-footer__contact-list">
+        <li>
+          <address>
+            123 Prime Street, Victoria Island,<br>Nigeria
+          </address>
+        </li>
+        <li>
+          <a href="mailto:support@realestatepro.com">support@realestatepro.com</a>
+        </li>
+        <li>
+          <a href="tel:+2348000000000">+234 800 000 0000</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Column 5: Newsletter -->
+    <div class="realestate-footer__column realestate-footer__newsletter">
+      <h4 class="realestate-footer__heading">Stay Updated</h4>
+      <form class="realestate-footer__form" id="newsletter-form">
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input
+          type="email"
+          id="newsletter-email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit" class="realestate-footer__button">Subscribe</button>
+        <p class="realestate-footer__form-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Bottom Bar -->
+  <div class="realestate-footer__bottom">
+    <div class="container realestate-footer__bottom-inner">
+
+      <!-- Social Icons -->
+      <div class="realestate-footer__social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <svg><!-- Facebook SVG --></svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <svg><!-- Instagram SVG --></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <svg><!-- Twitter SVG --></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <svg><!-- LinkedIn SVG --></svg>
+        </a>
+      </div>
+
+      <!-- Legal Links -->
+      <div class="realestate-footer__legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms">Terms & Conditions</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="realestate-footer__copy">
+        &copy; <span id="footer-year"></span> RealEstatePro. All rights reserved.
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
